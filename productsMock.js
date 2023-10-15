@@ -1,0 +1,38 @@
+export let products = [
+  {
+    id: 1,
+    title: "Abrigo",
+    price: 300,
+    stock: 4,
+    description: "El mejor abrigo para tu perrijo",
+    category: "moda",
+    img: "https://images.pexels.com/photos/7516805/pexels-photo-7516805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 2,
+    title: "Bebedero",
+    price: 400,
+    stock: 10,
+    description: "El mejor recipiente para tu perrijo",
+    category: "snack",
+    img: "https://media.os.fressnapf.com/products-v2/5/8/2/b/582b6a13c9b88729282dcab7f9b6f09e42837d10_bd3652be09833841975c7f704283f4de8bf114ba.jpg?t=prod_m&f=webp",
+  },
+  {
+    id: 3,
+    title: "Pollo",
+    price: 100,
+    stock: 30,
+    description: "El mejor juguete para tu perrijo",
+    category: "juguetes",
+    img: "https://media.os.fressnapf.com/products-v2/f/1/d/d/f1dd5a03db22d2b1c6d7a7340d2ec7094374b5d1_9d90c2cc0ce7047e4150407aa6d0a3991af8ce28.jpg?t=prod_m&f=webp",
+  },
+  {
+    id: 4,
+    title: "Comida enlatada",
+    price: 50,
+    stock: 20,
+    description: "El mejor alimento para tu perrijo",
+    category: "snack",
+    img: "https://media.os.fressnapf.com/products-v2/0/0/e/7/00e71fb272b3b80275c5465296e1a91ed6562037_33c9f43e9026122abd740868fc21a76fce796f60.jpg?t=prod_m&f=webp",
+  },
+];
