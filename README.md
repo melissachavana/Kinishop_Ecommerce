@@ -1,2 +1,2 @@
 Ecommerce Kinishop
-Preentrega1_MelissaChavana React Coderhouse
+Preentrega2_MelissaChavana React Coderhouse
