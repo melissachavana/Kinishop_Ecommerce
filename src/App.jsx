@@ -11,33 +11,31 @@ import { MiCuenta } from "./components/pages/micuenta/MiCuenta";
 import { ItemDetail } from "./components/pages/itemDetail/ItemDetail";
 import "./App.css";
 import { CounterContainer } from "./components/common/counter/CounterContainer";
+import { ItemList } from "./components/pages/ItemList/ItemList";
+import { useState } from "react";
+import { FetchingData } from "./components/pages/fetchingData/FetchingData";
+import { ItemDetailContainer } from "./components/pages/itemDetail/ItemDetailContainer";
+import { CustomModal } from "./components/common/modal/CustomModal";
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/carrito" element={<Carrito />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/micuenta" element={<MiCuenta />} />
-      <Route path="/ordenes" element={<Ordenes />} />
-      <Route path="/itemdetail/:id" element={<ItemDetail />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
-
-const App = () => {
-  let usuario = "Melissa";
-
+function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <AppRoutes />
-      <CounterContainer stock={5} />
-      <CounterContainer stock={12} />
+      <Routes>
+        <Route element={<Navbar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:categoryName" element={<Home />} />
+
+          <Route path="/carrito" element={<Carrito />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/micuenta" element={<MiCuenta />} />
+          <Route path="/ordenes" element={<Ordenes />} />
+          <Route path="/itemdetail/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
-};
+}
 
 export default App;

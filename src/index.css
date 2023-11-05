@@ -7,3 +7,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.section-center {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* Adjust the container width as needed */
+.container {
+  max-width: 1200px; /* You can adjust the maximum width as per your layout */
+  width: 100%;
+  padding: 0 20px; /* Apply equal padding on both sides */
+  margin: 0 auto; /* Center the container horizontally */
+}
